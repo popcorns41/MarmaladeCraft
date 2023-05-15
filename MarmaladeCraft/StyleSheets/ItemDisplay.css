@@ -1,0 +1,83 @@
+.ItemShowcase{
+	background-color: darkgrey;
+	margin:auto;
+	width: 90%;
+	height: 70%;
+	
+}
+.PreviewGrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 400px;
+	grid-template-areas:
+	"textDisplay PhotoDisplay";
+}
+
+.textDisplay{ 
+	grid-area: textDisplay;
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: 140px 1fr;
+	grid-template-areas:
+	"itemSelection"
+	"Comments";
+}
+
+.itemSelection{
+	grid-area: itemSelection;
+}
+.Comments{
+	background-color:lightgray;
+	grid-area: Comments;
+}
+
+.PhotoDisplay{
+	grid-area: PhotoDisplay;
+	position: relative;
+}
+
+.slides-container{
+	position: relative;
+	transition: 900ms cubic-bezier(0.48, 0.15, 0.18);
+}
+
+.slide-image{
+	width: 460px;
+	position: absolute;
+	height: 400px;
+}
+
+.navigation-dots{
+	display: flex;
+	position: absolute;
+	z-index: 98;
+	left: 0;
+	bottom: 0;
+	
+	
+}
+
+.wrapper{
+	overflow: hidden;
+	width: 460px;
+	height: 400px;
+}
+
+.single-dot{
+	background-color: darkgray;
+	height: 16px;
+	width: 16px;
+	border: 2px solid black;
+	border-radius: 50%;
+	margin: 0 8px;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+.single-dot.active{
+	background-color:lightgray;
+}
+
+
+

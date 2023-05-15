@@ -1,0 +1,134 @@
+.SortBox{
+	float:left;
+	width: 220px;
+	height: 700px;
+	background-color: blue;
+	transform: translate(0px, 60px);
+}
+
+.catalogue{
+	position: relative;
+	margin: auto;
+	width: 90%;
+	height: 85%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	"0grid 1grid 2grid"
+	"3grid 4grid 5grid"
+	"6grid 7grid 8grid";
+}
+
+.header{
+	width: 100%;
+	height: 10%;
+	display: flex;
+}
+
+.SortBy{
+	width: 90%;
+	height: 45%;
+	background-color: #2a345e;
+	margin: auto;
+}
+
+.sInput{
+	width: 98%;
+	justify-content: center;
+}
+
+.Pages{
+	float: right;
+	color: white;
+
+}
+
+.Pages ul{
+  list-style: none;
+}
+
+.Pages a{
+	color: white;
+}
+.Pages li{
+  display: inline;
+}
+
+
+#GridDiv{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+	background-color: #62757b;
+}
+
+.CataPhoto{
+ 	width:74%;
+ 	height:42%;
+ 	object-fit: cover;
+ 	margin: auto;
+ 	transform: translate(0px, 10px);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.buyButton{
+	background-color: #2a345e;
+	color: white;
+	width: 80%;
+	height: 15%;
+	margin: auto;
+	transform: translate(0px, 40px);
+}
+
+#interactButton:hover{
+	background-color: white;
+	color: black;
+}
+div.buyButton p{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+.GridBorder{
+	width: 95%;
+	height: 100%;
+	margin: auto;
+ }
+
+.ProductName{
+	position: relative;
+	transform: translate(0px, 20px);
+}
+
+.Price{
+	position: relative;
+	transform: translate(0px, 25px);
+}
+
+.ctitle{
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	background-color:darkblue;
+}
+
+.ftitle{
+	width:100%;
+	height: 15%;
+	text-align: center;
+}
+
+.CheckList{
+	width: 100%;
+	height: 35%;
+	text-align: center;
+}
